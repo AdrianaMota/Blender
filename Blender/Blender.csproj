@@ -12,11 +12,63 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.1.0.555618" />
     <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Net.Http" Version="2.2.29" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Refit" Version="4.8.14" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />
+    <Folder Include="Images\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Views\MyPage.xaml.cs" />
+    <Compile Remove="CustomEntry.cs" />
+    <Compile Remove="IMakeUpApi.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Images\blendy.png" />
+    <None Remove="Images\BackgroundMP.png" />
+    <None Remove="Images\Products.png" />
+    <None Remove="Images\Tag.png" />
+    <None Remove="Images\Brand.png" />
+    <None Remove="Images\Tags.png" />
+    <None Remove="Images\Brands.png" />
+    <None Remove="Images\WishList.png" />
+    <None Remove="Images\Background1.png" />
+    <None Remove="Images\Dropdown.png" />
+    <None Remove="Images\Lipliner.png" />
+    <None Remove="Images\Nailpolish.png" />
+    <None Remove="Images\Eyebrow.png" />
+    <None Remove="Images\Eyeliner.png" />
+    <None Remove="Images\Blush.png" />
+    <None Remove="Images\Lipstick.png" />
+    <None Remove="Images\Mascara.png" />
+    <None Remove="Images\Foundation.png" />
+    <None Remove="Images\Bronzer.png" />
+    <None Remove="Images\Eyeshadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Views\MyPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\blendy.png" />
+    <EmbeddedResource Include="Images\BackgroundMP.png" />
+    <EmbeddedResource Include="Images\Products.png" />
+    <EmbeddedResource Include="Images\Tags.png" />
+    <EmbeddedResource Include="Images\Brands.png" />
+    <EmbeddedResource Include="Images\WishList.png" />
+    <EmbeddedResource Include="Images\Background1.png" />
+    <EmbeddedResource Include="Images\Dropdown.png" />
+    <EmbeddedResource Include="Images\Lipliner.png" />
+    <EmbeddedResource Include="Images\Nailpolish.png" />
+    <EmbeddedResource Include="Images\Eyebrow.png" />
+    <EmbeddedResource Include="Images\Eyeliner.png" />
+    <EmbeddedResource Include="Images\Blush.png" />
+    <EmbeddedResource Include="Images\Lipstick.png" />
+    <EmbeddedResource Include="Images\Mascara.png" />
+    <EmbeddedResource Include="Images\Foundation.png" />
+    <EmbeddedResource Include="Images\Bronzer.png" />
+    <EmbeddedResource Include="Images\Eyeshadow.png" />
   </ItemGroup>
 </Project>

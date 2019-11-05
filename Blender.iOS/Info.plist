@@ -37,6 +37,12 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Vibur-Regular.ttf</string>
+		<string>Manjari-Regular.ttf</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>

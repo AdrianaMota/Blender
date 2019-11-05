@@ -6,6 +6,10 @@
                 <On Platform="Android" Value="Vibur-Regular.ttf#Regular" />
                 <On Platform="iOS" Value="Vibur" />
             </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="Manjari">
+                <On Platform="Android" Value="Manjari-Regular.ttf#Regular" />
+                <On Platform="iOS" Value="Manjari" />
+            </OnPlatform>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

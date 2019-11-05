@@ -1,8 +1,127 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage
+    BackgroundColor="#F0F0F0"
+    NavigationPage.HasNavigationBar="False"
     NavigationPage.HasBackButton="False"
     xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Blender.Views.Menu">
-    <ContentPage.Content>
-        <Label Text=" Menu Pageee!!!"/>
-    </ContentPage.Content>
+    <AbsoluteLayout>
+        <Image x:Name="background"
+               Aspect="Fill"
+               AbsoluteLayout.LayoutBounds="0, 0, 1, 0.6"
+               AbsoluteLayout.LayoutFlags="All"/>
+        <Label Text="Blender"
+               FontFamily="{StaticResource Vibur}"
+               TextColor="White"
+               AbsoluteLayout.LayoutBounds="0.5, 0"
+               AbsoluteLayout.LayoutFlags="XProportional">
+             <Label.FontSize>
+                <OnPlatform x:TypeArguments="x:Double"
+                            iOS="50"
+                            Android="40"/>
+            </Label.FontSize>
+            <Label.Margin>
+                <OnPlatform x:TypeArguments="Thickness"
+                            iOS="0, 70, 0, 0"
+                            Android="0, 20, 0, 0"/>
+            </Label.Margin>
+        </Label>
+        <Label HorizontalTextAlignment="Center"
+               FontFamily= "{StaticResource Manjari}"
+               TextColor="White"
+               AbsoluteLayout.LayoutBounds="0.5, 0"
+               AbsoluteLayout.LayoutFlags="XProportional"
+               >
+            <Label.FontSize>
+                <OnPlatform x:TypeArguments="x:Double"
+                            iOS="25"
+                            Android="20"/>
+            </Label.FontSize>
+            <Label.Text>
+Find popular makup brands
+Create your own wishlist
+Compare prices
+And more!
+            </Label.Text>
+            <Label.Margin>
+                <OnPlatform x:TypeArguments="Thickness"
+                            iOS="0, 150, 0, 0"
+                            Android="0, 80, 0, 0"/>
+            </Label.Margin>
+        </Label>
+        <Image x:Name="blendy"
+               AbsoluteLayout.LayoutBounds="0.84, 0.32"
+               AbsoluteLayout.LayoutFlags="PositionProportional"
+               HeightRequest="130">
+            <Image.HeightRequest>
+                <OnPlatform x:TypeArguments="x:Double"
+                            iOS="130"
+                            Android="100"/>
+            </Image.HeightRequest>
+        </Image>
+        <Grid ColumnSpacing="30" RowSpacing="25"
+            AbsoluteLayout.LayoutBounds="0.5, 0.95, 0.7, 0.4" AbsoluteLayout.LayoutFlags="All">
+            <Grid.RowDefinitions>
+                 <RowDefinition Height="*" /> 
+                 <RowDefinition Height="*" />
+             </Grid.RowDefinitions>
+
+             <Grid.ColumnDefinitions>
+                 <ColumnDefinition Width="*" />
+                 <ColumnDefinition  Width="*" />
+             </Grid.ColumnDefinitions>
+            <ImageButton x:Name="prod"
+                         Grid.Row="0"
+                         Grid.Column="0"
+                         BackgroundColor="White"
+                         CornerRadius="10"
+                         Clicked="ProductsClicked"
+                         >
+                <ImageButton.Padding>
+                    <OnPlatform x:TypeArguments="Thickness"
+                                iOS="17"
+                                Android="2, 9"/>
+                </ImageButton.Padding>
+                
+            </ImageButton>
+            <ImageButton x:Name="brand"
+                         Grid.Row="0"
+                         Grid.Column="1"
+                         BackgroundColor="white"
+                         CornerRadius="10"
+                        >
+                <ImageButton.Padding>
+                    <OnPlatform x:TypeArguments="Thickness"
+                                iOS="20"
+                                Android="3,8"/>
+                </ImageButton.Padding>
+                
+            </ImageButton>
+            <ImageButton x:Name="tag"
+                         Grid.Row="1"
+                         Grid.Column="0"
+                         BackgroundColor="white"
+                         CornerRadius="10"
+                        >
+                <ImageButton.Padding>
+                    <OnPlatform x:TypeArguments="Thickness"
+                                iOS="23"
+                                Android="3,10"/>
+                </ImageButton.Padding>
+                
+            </ImageButton>
+            <ImageButton x:Name="wishlist"
+                         Grid.Row="1"
+                         Grid.Column="1"
+                         BackgroundColor="white"
+                         CornerRadius="10"
+                        >
+                <ImageButton.Padding>
+                    <OnPlatform x:TypeArguments="Thickness"
+                                iOS="23"
+                                Android="3, 13"/>
+                </ImageButton.Padding>
+                
+            </ImageButton>
+        </Grid>
+    </AbsoluteLayout>
 </ContentPage>

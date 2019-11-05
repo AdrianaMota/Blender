@@ -133,5 +133,6 @@
   <ItemGroup>
     <BundleResource Include="Resources\Vibur-Regular.ttf" />
     <BundleResource Include="Resources\blendy.png" />
+    <BundleResource Include="Resources\Manjari-Regular.ttf" />
   </ItemGroup>
 </Project>

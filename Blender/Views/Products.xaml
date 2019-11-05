@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage     BackgroundColor="#F0F0F0"
+                 NavigationPage.HasNavigationBar="False"
+                 NavigationPage.HasBackButton="False"
+    xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Blender.Views.Products">
+    <AbsoluteLayout>
+        <Image x:Name="background" Aspect="Fill"
+               AbsoluteLayout.LayoutBounds="0, 0, 1, 0.4"
+               AbsoluteLayout.LayoutFlags="All"
+               />
+          <Label Text="Products"
+                FontFamily="{StaticResource Vibur}"
+                TextColor="White"
+                HorizontalTextAlignment="Center"
+                AbsoluteLayout.LayoutBounds="0.5, 0"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                        >
+            <Label.FontSize>
+                <OnPlatform x:TypeArguments="x:Double"
+                            iOS="50"
+                            Android="40"/>
+            </Label.FontSize>
+            <Label.Margin>
+                <OnPlatform x:TypeArguments="Thickness"
+                            iOS="0, 70, 0, 0"
+                            Android="0, 20, 0, 0"/>
+            </Label.Margin>
+        </Label>
+        <Entry Placeholder="Search, eg: Lipstick, Blush..."
+               BackgroundColor="Transparent"
+               PlaceholderColor="white"
+               TextColor="white"
+               WidthRequest="300"
+               HorizontalOptions="Center"
+               AbsoluteLayout.LayoutBounds="0.5, 0"
+               AbsoluteLayout.LayoutFlags="PositionProportional">
+            <Entry.Margin>
+                <OnPlatform x:TypeArguments="Thickness"
+                            iOS="0, 160, 0, 0"
+                            Android="0, 90, 0, 0"/>
+            </Entry.Margin>
+        </Entry>
+     </AbsoluteLayout>
+</ContentPage>

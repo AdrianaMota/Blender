@@ -16,6 +16,7 @@ namespace Blender
         public MainPage()
         {
             InitializeComponent();
+            blendy.Source = ImageSource.FromResource("Blender.Images.blendy.png");
         }
         protected async override void OnAppearing()
         {
